@@ -35,8 +35,8 @@ document.querySelectorAll(".slot").forEach((slot) => {
 <strong>Spot & Show:</strong> If you spot an item on your card, point it out to cross it off. <br>
 <strong>Winning:</strong> The first to complete a row in any direction wins. <br>
 <strong>Dinner on the Line:</strong> The winner decides dinner, and the other person cooks. <br>
-<strong>Play to Win:</strong> The game continues until there's a winner.</p>
-                    <img src="./Images/holiday_bingo.jpg" alt="Holiday Bingo" style="max-width: 100%; border-radius: 10px;">
+/.,<strong>Play to Win:</strong> The game continues until there's a winner.</p>
+                    <img src="./Images/holiday bingo.jpg" alt="Holiday Bingo" style="max-width: 100%; border-radius: 10px;">
                     <p>For a better version of the Bingo card, <a href="https://docs.google.com/document/d/12xaeG7kOY9BBuW9WVFgExHwHm301AzZKVBNCR3WpGiA/edit?usp=sharing" target="_blank">click here</a>.</p>
                 `;
             }
@@ -53,7 +53,7 @@ document.querySelectorAll(".slot").forEach((slot) => {
 
 
 // Background Music
-const music = new Audio("./old carol.mp3");
+const music = new Audio("./assets/sounds/old carol.mp3");
 music.loop = true;
 
 // Create a toggle button for music
