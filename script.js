@@ -53,7 +53,7 @@ document.querySelectorAll(".slot").forEach((slot) => {
 
 
 // Background Music
-const music = new Audio("./assets/old carol.mp3");
+const music = new Audio("./assets/sounds/old carol.mp3");
 music.loop = true;
 
 // Create a toggle button for music
