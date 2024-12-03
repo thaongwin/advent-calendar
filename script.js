@@ -95,7 +95,15 @@ setInterval(createSnowflake, 400);
 const surprises = {
     1: "Let’s Build a Gingerbread House Together! 🏠\nI thought of this idea way before you got your hands on the Trader Joe's Gingerbread house kit by the way!!",
     2: "Purr-fect Day at Crumbs & Whiskers @ Georgetown! 🐾\nDate: 12:20 PM\nLet’s surround ourselves with adorable whiskers, soft purrs, and maybe a latte or two.",
-    3: "Let’s Play Holiday Bingo! 🎄\nWho will win first? Whoever does gets to decide our next holiday-themed activity. Ready, set, bingo!",
+    3: " <h2>Holiday Bingo Game</h2>
+                    <p>
+<strong>Play Together:</strong> Only play when both of you are present. <br>
+<strong>Spot & Show:</strong> If you spot an item on your card, point it out to cross it off. <br>
+<strong>Winning:</strong> The first to complete a row in any direction wins. <br>
+<strong>Dinner on the Line:</strong> The winner decides dinner, and the other person cooks. <br>
+/.,<strong>Play to Win:</strong> The game continues until there's a winner.</p>
+                    <img src="./Images/holiday bingo.jpg" alt="Holiday Bingo" style="max-width: 100%; border-radius: 10px;">
+                    <p>For a better version of the Bingo card, <a href="https://docs.google.com/document/d/12xaeG7kOY9BBuW9WVFgExHwHm301AzZKVBNCR3WpGiA/edit?usp=sharing" target="_blank">click here</a>.</p>",
     4: "Your Coupon for a free Facial 💆\nA calming, DIY spa experience awaits. Expires in 20 days—claim your moment of relaxation whenever you’re ready.",
     5: `
         <p>Cookie Baking! 🍪</p>
