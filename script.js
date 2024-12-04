@@ -45,6 +45,27 @@ setInterval(updateCountdownsAndBars, 1000);
                 <img src="./Images/holiday bingo.jpg" alt="Holiday Bingo" style="max-width: 100%; border-radius: 10px;">
                 <p>For a better version of the Bingo card, <a href="https://docs.google.com/document/d/12xaeG7kOY9BBuW9WVFgExHwHm301AzZKVBNCR3WpGiA/edit?usp=sharing" target="_blank">click here</a>.</p>`,
         4: "Your Coupon for a free Facial 💆 A calming, DIY spa experience awaits. Expires in 20 days—claim your moment of relaxation whenever you’re ready.",
+        5: `
+        <p>Cookie Baking! 🍪</p>
+        <p>Sit down and relax – I’m baking us some cookies!</p>
+        <img src="https://media.giphy.com/media/xT0xeMA62E1XIlup68/giphy.gif" alt="Baking" style="max-width: 100%; border-radius: 10px;">
+    `,
+    6: `
+        <p>Ice Skating Date ⛸️</p>
+        <p>Let’s glide into fun @ National Gallery of Art Sculpture Garden, Washington Harbour Ice Rink, or The Wharf Ice Rink!</p>
+        `,
+    7: `
+        <p>Role-Reversal Day Coupon 🎭</p>
+        <p>Today, you get to pick our activity!</p>
+    `,
+    8: `
+        <p>Holiday Taste Test 🎉</p>
+        <p>Ready for some festive flavors? Let’s have a holiday snack taste test!</p>
+    `,
+    9: `
+        <p>Bundle of Kisses 💋</p>
+        <p>You’ve unlocked a bundle of 5 kisses, redeemable anytime, anywhere.</p>
+    `,
         // Add additional surprises for other slots as needed
     };
 
