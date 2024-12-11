@@ -74,7 +74,7 @@ A magical treasure hunt awaits!</p>
 `,
 11: `
     <p><strong>Memory Jar 🎁</strong></p>
-    <img id="memoryJar" src="images/memory jar.png" alt="Memory Jar" style="max-width: 300px; cursor: pointer;">
+    <img id="memoryJar" src="./Images/memory jar.png" alt="Memory Jar" style="max-width: 300px; cursor: pointer;">
     <p>Click the jar to take a trip down memory lane!</p>
 `,
 12: `
