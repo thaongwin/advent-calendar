@@ -236,3 +236,9 @@ body {
 #close-modal:hover {
     background-color: #6A0000;
 }
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+}
