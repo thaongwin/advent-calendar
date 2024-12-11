@@ -72,12 +72,82 @@ setInterval(updateCountdownsAndBars, 1000);
 A magical treasure hunt awaits!</p>
 <button onclick="showClue1()">Start the Hunt</button>
 `,
+11: `
+    <p><strong>Memory Jar 🎁</strong></p>
+    <img id="memoryJar" src="images/memory jar.png" alt="Memory Jar" style="max-width: 300px; cursor: pointer;">
+    <p>Click the jar to take a trip down memory lane!</p>
+`,
+12: `
+    <p><strong>Holiday Lights Walk 🎄✨</strong></p>
+    <p>Let’s take a romantic stroll to see D.C.’s holiday lights and decorations.</p>
+`,
+
+13: `
+    <p><strong>Lighthearted Tarot Reading 🔮</strong></p>
+    <p>A sprinkle of magic with a fun tarot reading for us!</p>
+If you're seeing this text, Ivy is probably tired and a little bit forgetful, but she was gonna make this look cooler. Tell me incase you see this text! 
+    `,
+
+14: `
+    <p><strong>DIY Snow Globe ❄️</strong></p>
+    <p>Guess who’s making snow globes? Hint: it’s us!</p>
+`,
+
+15: `
+    <p><strong>Cozy Tea/Coffee Date ☕</strong></p>
+    <p>I’ll make you the drink you’re thinking of – anything you want, just name it!</p>
+`,
+
+16: `
+    <p><strong>Mini Language Lesson 🇻🇳</strong></p>
+    <p>Learn a sweet phrase or inside joke in Vietnamese today.</p>
+`,
+
+
 
         // Add additional surprises for other slots as needed
     };
 
     document.querySelectorAll(".slot").forEach((slot) => {
         const slotDay = parseInt(slot.getAttribute("data-day"));
+// Memory Jar Logic for Day 11
+document.addEventListener("click", (event) => {
+    if (event.target && event.target.id === "memoryJar") {
+        // Shaking animation
+        const jar = event.target;
+        jar.style.animation = "shake 0.5s ease-in-out";
+        
+        setTimeout(() => {
+            jar.style.animation = ""; // Remove animation after it plays
+            // Display a random memory
+            const memories = [
+                { image: "images/hello thailand.jpeg", text: "You got me the cutest bouquet at the Thailand airport. Our second meet-cute 💐✨🥹" },
+                { image: "images/i can see your trunk.jpeg", text: "I can see your trunk 🐘👀" },
+                { image: "images/just a cute photo of us.jpeg", text: "Just a cute photo of me. Oh wait, you're there too 📸🥰👋💖 Hi George!" },
+                { image: "images/just us chillin in LA.jpeg", text: "Just us in L.A. Life was simpler back then 🌴" },
+                { image: "images/our first baby photo.jpeg", text: "This might be our first photo together! 📸" },
+                { image: "images/our first meal together.jpeg", text: "Our first meet-cute. You didn't know what you were signing up for 💘😆🎯" },
+                { image: "images/that driver dashed 60 km just to give me the bouquet.jpeg", text: "Remember this bouquet? That driver dashed 60kms just to deliver it. The speed of... true love? 💐🏎️💨❤️" },
+                { image: "images/this bennihanna date was everything.jpeg", text: "Our first (and only) Benihanna date. I remember it like it was yesterday: Shirley temple is not an alcoholic drink 🍹🍣😂💕" },
+                { image: "images/took you three hours to take this photo.JPG", text: "This photo took you three hours to take. Let's look at it one more time. Bask in my beauty." },
+                { image: "images/us at the beach.jpeg", text: "We went to see the seals! One looked like a big black banana." },
+                { image: "images/when you look like a wild husky.jpeg", text: "You looked like a wild husky in this photo 🐺" },
+                { image: "images/you leaving the airport to go back to the states.jpeg", text: "Photo of a man leaving the country after his 8-hour date. " },
+                { image: "images/you were not impressed with how this photo turned out.jpeg", text: "You were NOT impressed with how that lady took this photo. I agree lol." },
+                { image: "images/your first bouquet for me.jpeg", text: "Your first bouquet for me. Gets me all emotional 💐" },
+
+            ];
+            const randomMemory = memories[Math.floor(Math.random() * memories.length)];
+            const modal = document.getElementById("modal");
+            const modalMessage = document.getElementById("modal-message");
+            modalMessage.innerHTML = `
+                <img src="${randomMemory.image}" alt="Memory" style="max-width: 100%; border-radius: 10px;">
+                <p>${randomMemory.text}</p>
+            `;
+            modal.classList.add("show");
+        }, 500); // Match the animation duration
+    }
+});
 
         // Unlock slots based on the current date
         slot.classList.toggle("locked", slotDay > currentDate);
