@@ -121,20 +121,20 @@ document.addEventListener("click", (event) => {
             jar.style.animation = ""; // Remove animation after it plays
             // Display a random memory
             const memories = [
-                { image: "images/hello thailand.jpeg", text: "You got me the cutest bouquet at the Thailand airport. Our second meet-cute 💐✨🥹" },
-                { image: "images/i can see your trunk.jpeg", text: "I can see your trunk 🐘👀" },
-                { image: "images/just a cute photo of us.jpeg", text: "Just a cute photo of me. Oh wait, you're there too 📸🥰👋💖 Hi George!" },
-                { image: "images/just us chillin in LA.jpeg", text: "Just us in L.A. Life was simpler back then 🌴" },
-                { image: "images/our first baby photo.jpeg", text: "This might be our first photo together! 📸" },
-                { image: "images/our first meal together.jpeg", text: "Our first meet-cute. You didn't know what you were signing up for 💘😆🎯" },
-                { image: "images/that driver dashed 60 km just to give me the bouquet.jpeg", text: "Remember this bouquet? That driver dashed 60kms just to deliver it. The speed of... true love? 💐🏎️💨❤️" },
-                { image: "images/this bennihanna date was everything.jpeg", text: "Our first (and only) Benihanna date. I remember it like it was yesterday: Shirley temple is not an alcoholic drink 🍹🍣😂💕" },
-                { image: "images/took you three hours to take this photo.JPG", text: "This photo took you three hours to take. Let's look at it one more time. Bask in my beauty." },
-                { image: "images/us at the beach.jpeg", text: "We went to see the seals! One looked like a big black banana." },
-                { image: "images/when you look like a wild husky.jpeg", text: "You looked like a wild husky in this photo 🐺" },
-                { image: "images/you leaving the airport to go back to the states.jpeg", text: "Photo of a man leaving the country after his 8-hour date. " },
-                { image: "images/you were not impressed with how this photo turned out.jpeg", text: "You were NOT impressed with how that lady took this photo. I agree lol." },
-                { image: "images/your first bouquet for me.jpeg", text: "Your first bouquet for me. Gets me all emotional 💐" },
+                { image: "./Images/hello thailand.jpeg", text: "You got me the cutest bouquet at the Thailand airport. Our second meet-cute 💐✨🥹" },
+                { image: "./Images/i can see your trunk.jpeg", text: "I can see your trunk 🐘👀" },
+                { image: "./Images/just a cute photo of us.jpeg", text: "Just a cute photo of me. Oh wait, you're there too 📸🥰👋💖 Hi George!" },
+                { image: "./Images/just us chillin in LA.jpeg", text: "Just us in L.A. Life was simpler back then 🌴" },
+                { image: "./Images/our first baby photo.jpeg", text: "This might be our first photo together! 📸" },
+                { image: "./Images/our first meal together.jpeg", text: "Our first meet-cute. You didn't know what you were signing up for 💘😆🎯" },
+                { image: "./Images/that driver dashed 60 km just to give me the bouquet.jpeg", text: "Remember this bouquet? That driver dashed 60kms just to deliver it. The speed of... true love? 💐🏎️💨❤️" },
+                { image: "./Images/this bennihanna date was everything.jpeg", text: "Our first (and only) Benihanna date. I remember it like it was yesterday: Shirley temple is not an alcoholic drink 🍹🍣😂💕" },
+                { image: "./Images/took you three hours to take this photo.JPG", text: "This photo took you three hours to take. Let's look at it one more time. Bask in my beauty." },
+                { image: "./Images/us at the beach.jpeg", text: "We went to see the seals! One looked like a big black banana." },
+                { image: "./Images/when you look like a wild husky.jpeg", text: "You looked like a wild husky in this photo 🐺" },
+                { image: "./Images/you leaving the airport to go back to the states.jpeg", text: "Photo of a man leaving the country after his 8-hour date. " },
+                { image: "./Images/you were not impressed with how this photo turned out.jpeg", text: "You were NOT impressed with how that lady took this photo. I agree lol." },
+                { image: "./Images/your first bouquet for me.jpeg", text: "Your first bouquet for me. Gets me all emotional 💐" },
 
             ];
             const randomMemory = memories[Math.floor(Math.random() * memories.length)];
