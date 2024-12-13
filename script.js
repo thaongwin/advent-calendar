@@ -74,7 +74,7 @@ A magical treasure hunt awaits!</p>
 `,
 11: `
     <p><strong>Memory Jar 🎁</strong></p>
-    <img id="memoryJar" src="./Images/memory jar.png" alt="Memory Jar" style="max-width: 300px; cursor: pointer;">
+    <img id="memoryJar" src="images/memory jar.png" alt="Memory Jar" style="max-width: 300px; cursor: pointer;">
     <p>Click the jar to take a trip down memory lane!</p>
 `,
 12: `
@@ -83,10 +83,11 @@ A magical treasure hunt awaits!</p>
 `,
 
 13: `
-    <p><strong>Lighthearted Tarot Reading 🔮</strong></p>
-    <p>A sprinkle of magic with a fun tarot reading for us!</p>
-If you're seeing this text, Ivy is probably tired and a little bit forgetful, but she was gonna make this look cooler. Tell me incase you see this text! 
-    `,
+    <p><strong>Tarot Reading 🔮</strong></p>
+    <img id="tarotDeck" src="./images/riderwaite.jpg.jpeg" alt="Tarot Deck" style="max-width: 300px; cursor: pointer;">
+    <p>Click the tarot deck for a random intuitive message, just for George...</p>
+`,
+
 
 14: `
     <p><strong>DIY Snow Globe ❄️</strong></p>
@@ -121,20 +122,20 @@ document.addEventListener("click", (event) => {
             jar.style.animation = ""; // Remove animation after it plays
             // Display a random memory
             const memories = [
-                { image: "./Images/hello thailand.jpeg", text: "You got me the cutest bouquet at the Thailand airport. Our second meet-cute 💐✨🥹" },
-                { image: "./Images/i can see your trunk.jpeg", text: "I can see your trunk 🐘👀" },
-                { image: "./Images/just a cute photo of us.jpeg", text: "Just a cute photo of me. Oh wait, you're there too 📸🥰👋💖 Hi George!" },
-                { image: "./Images/just us chillin in LA.jpeg", text: "Just us in L.A. Life was simpler back then 🌴" },
-                { image: "./Images/our first baby photo.jpeg", text: "This might be our first photo together! 📸" },
-                { image: "./Images/our first meal together.jpeg", text: "Our first meet-cute. You didn't know what you were signing up for 💘😆🎯" },
-                { image: "./Images/that driver dashed 60 km just to give me the bouquet.jpeg", text: "Remember this bouquet? That driver dashed 60kms just to deliver it. The speed of... true love? 💐🏎️💨❤️" },
-                { image: "./Images/this bennihanna date was everything.jpeg", text: "Our first (and only) Benihanna date. I remember it like it was yesterday: Shirley temple is not an alcoholic drink 🍹🍣😂💕" },
-                { image: "./Images/took you three hours to take this photo.JPG", text: "This photo took you three hours to take. Let's look at it one more time. Bask in my beauty." },
-                { image: "./Images/us at the beach.jpeg", text: "We went to see the seals! One looked like a big black banana." },
-                { image: "./Images/when you look like a wild husky.jpeg", text: "You looked like a wild husky in this photo 🐺" },
-                { image: "./Images/you leaving the airport to go back to the states.jpeg", text: "Photo of a man leaving the country after his 8-hour date. " },
-                { image: "./Images/you were not impressed with how this photo turned out.jpeg", text: "You were NOT impressed with how that lady took this photo. I agree lol." },
-                { image: "./Images/your first bouquet for me.jpeg", text: "Your first bouquet for me. Gets me all emotional 💐" },
+                { image: "images/hello thailand.jpeg", text: "You got me the cutest bouquet at the Thailand airport. Our second meet-cute 💐✨🥹" },
+                { image: "images/i can see your trunk.jpeg", text: "I can see your trunk 🐘👀" },
+                { image: "images/just a cute photo of us.jpeg", text: "Just a cute photo of me. Oh wait, you're there too 📸🥰👋💖 Hi George!" },
+                { image: "images/just us chillin in LA.jpeg", text: "Just us in L.A. Life was simpler back then 🌴" },
+                { image: "images/our first baby photo.jpeg", text: "This might be our first photo together! 📸" },
+                { image: "images/our first meal together.jpeg", text: "Our first meet-cute. You didn't know what you were signing up for 💘😆🎯" },
+                { image: "images/that driver dashed 60 km just to give me the bouquet.jpeg", text: "Remember this bouquet? That driver dashed 60kms just to deliver it. The speed of... true love? 💐🏎️💨❤️" },
+                { image: "images/this bennihanna date was everything.jpeg", text: "Our first (and only) Benihanna date. I remember it like it was yesterday: Shirley temple is not an alcoholic drink 🍹🍣😂💕" },
+                { image: "images/took you three hours to take this photo.JPG", text: "This photo took you three hours to take. Let's look at it one more time. Bask in my beauty." },
+                { image: "images/us at the beach.jpeg", text: "We went to see the seals! One looked like a big black banana." },
+                { image: "images/when you look like a wild husky.jpeg", text: "You looked like a wild husky in this photo 🐺" },
+                { image: "images/you leaving the airport to go back to the states.jpeg", text: "Photo of a man leaving the country after his 8-hour date. " },
+                { image: "images/you were not impressed with how this photo turned out.jpeg", text: "You were NOT impressed with how that lady took this photo. I agree lol." },
+                { image: "images/your first bouquet for me.jpeg", text: "Your first bouquet for me. Gets me all emotional 💐" },
 
             ];
             const randomMemory = memories[Math.floor(Math.random() * memories.length)];
@@ -302,3 +303,49 @@ function checkBinaryAnswer() {
         alert("Hmm, that doesn't seem right. Think like a coder!");
     }
 }
+// Tarot Reading Logic
+document.addEventListener("click", (event) => {
+    if (event.target && event.target.id === "tarotDeck") {
+        const tarotMessages = [
+            // Self-Growth & Reflection
+            "Your Inner Fire – You’ve been holding back on something you’re passionate about. It’s time to reignite that flame—start small, but start now.",
+            "The Answer Lies Within – You’ve been seeking external validation, but the clarity you want is already inside you. Spend quiet time alone and trust your intuition.",
+            "Reclaim Your Power – You’ve let past experiences dim your light. Stand tall, reclaim your confidence, and show the world who you truly are.",
+            "Breaking Patterns – You’re on the verge of breaking an old habit that’s held you back. The first step is the hardest, but freedom is within reach.",
+            "Your Unique Path – Stop comparing your journey to others. You’re meant to carve your own way, even if no one understands it right now.",
+
+            // Relationships & Emotions
+            "Words from the Heart – There’s something important you’ve been meaning to say. Speak your truth gently, and the response will surprise you.",
+            "Deeper Connections – Someone in your life craves a closer connection with you. Open your heart—you might be surprised by what blossoms.",
+            "Healing Together – You and someone close to you are healing through shared experiences. Be patient with their process as much as your own.",
+            "Unexpected Reunion – Someone from your past might resurface with an important message. Listen carefully; closure or reconnection is possible.",
+            "Love in Bloom – A relationship you’ve nurtured is growing stronger. Celebrate the small moments—they are what build something lasting.",
+
+            // Opportunities & Career
+            "Next Big Step – You’re on the edge of something game-changing. Trust your skills—you’re more prepared than you think.",
+            "Your Unique Gift – You have a talent you’ve been underestimating. Lean into it—it could be your greatest strength professionally.",
+            "Say Yes to Change – A new opportunity might seem risky but could open doors you didn’t expect. Take the leap with curiosity, not fear.",
+            "Seeds of Success – The work you’ve been doing will soon pay off. Stay consistent, even when progress feels slow.",
+            "Aligned Purpose – Stop chasing what feels 'safe.' A path more aligned with your true calling is waiting if you have the courage to explore it.",
+
+            // Personal Transformation & Life Journey
+            "The Journey Home – You’re coming back to yourself after a long, uncertain period. Trust that what feels right is guiding you home to who you’ve always been.",
+            "Seasons of Change – Life is shifting beneath your feet. Let the old fall away so the new can root itself in your life.",
+            "Release and Rebuild – You’ve been holding on to something out of fear of the unknown. Letting go will create space for something even better.",
+            "Soul Awakening – You’re being called to step into a more authentic, soulful version of yourself. Don’t dim your light for anyone.",
+            "Universal Support – Even when you feel alone, you are deeply supported by forces beyond what you can see. Trust that everything is unfolding perfectly.",
+        ];
+
+        // Pick a random tarot message
+        const randomMessage = tarotMessages[Math.floor(Math.random() * tarotMessages.length)];
+
+        // Display it in the modal
+        const modal = document.getElementById("modal");
+        const modalMessage = document.getElementById("modal-message");
+        modalMessage.innerHTML = `
+            <p><strong>Your Tarot Message 🔮</strong></p>
+            <p>${randomMessage}</p>
+        `;
+        modal.classList.add("show");
+    }
+});
