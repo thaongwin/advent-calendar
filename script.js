@@ -84,7 +84,7 @@ A magical treasure hunt awaits!</p>
 
 13: `
     <p><strong>Tarot Reading 🔮</strong></p>
-    <img id="tarotDeck" src="images/riderwaite.jpg.jpeg" alt="Tarot Deck" style="max-width: 300px; cursor: pointer;">
+    <img id="tarotDeck" src="./Images/riderwaite.jpg.jpeg" alt="Tarot Deck" style="max-width: 300px; cursor: pointer;">
     <p>Click the tarot deck for a random intuitive message, just for George...</p>
 `,
 
