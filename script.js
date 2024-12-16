@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const today = new Date();
     const washingtonTime = new Date(today.toLocaleString("en-US", { timeZone: "America/New_York" }));
-    const currentDate = 25;  // Temporarily unlock all days
+    const currentDate = washingtonTime.getDate();  // Unlock based on real-time date
 
     // Function to update countdowns and progress bars
 function updateCountdownsAndBars() {
