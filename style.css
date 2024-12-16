@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern yet simple */
+    margin: 0;
+    padding: 0;
+    background-color: #F5E6D3; /* Warm beige */
+    color: #2F4F4F; /* Sage green */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Container for Page Content */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: none; /* Removes white background */
+    border-radius: 0; /* Removes rounded corners */
+    box-shadow: none; /* Removes the shadow */
+}
+
+
+/* Title Styling */
+.title {
+    font-family: 'Great Vibes', cursive; /* Elegant festive font */
+    font-size: 3rem;
+    color: #8B0000; /* Muted Christmas red */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header Text Styling */
+.header-text-container {
+    text-align: justify; /* Neat text alignment */
+    padding: 20px;
+}
+
+.header-text {
+    font-size: 1.2rem;
+    color: #2F4F4F; /* Sage green */
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+.header-text .highlight {
+    font-family: 'Great Vibes', cursive;
+    color: #8B0000;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.header-text strong {
+    color: #8B0000;
+    font-weight: bold;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px auto;
+}
+
+/* Slots Styling */
+/* Grid Layout */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 slots per row */
+    gap: 15px; /* Space between slots */
+    margin: 0 auto; /* Center the grid */
+    max-width: 800px; /* Limit the width of the grid */
+    padding: 20px; /* Add some padding around the grid */
+}
+
+/* Slots */
+.slot {
+    background-color: #FFF;
+    border: 2px solid #2F4F4F; /* Sage green */
+    border-radius: 10px;
+    padding: 15px; /* Adjust padding for uniform slot size */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2F4F4F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.slot.locked {
+    background-color: #E8E8E8; /* Light gray */
+    cursor: not-allowed;
+}
+
+.slot.unlocked {
+    background-color: #FFF;
+    border: 2px solid #8B0000; /* Muted red */
+}
+
+.slot:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Lift effect on hover */
+}
+
+/* Optional: Add uniform height for all slots */
+.slot {
+    height: 60px; /* Adjust height to your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Snowflakes */
+#snowContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+    opacity: 0.8;
+    color: white;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* Music Toggle Button */
+#musicToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #2F4F4F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#musicToggle:hover {
+    background-color: #8B0000;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(139, 0, 0, 0.3);
+}
+
+/* Countdown Bars */
+#countdowns {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.countdown {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 400px;
+    height: 15px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #8B0000;
+    transition: width 0.5s ease-in-out;
+}
+
+#progressNYC {
+    background-color: #2F4F4F;
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#close-modal {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-modal:hover {
+    background-color: #6A0000;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+}
