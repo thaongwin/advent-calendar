@@ -110,7 +110,7 @@ A magical treasure hunt awaits!</p>
 18: `
     <p><strong> Cozy Socks & Lazy Day 🧦🎄☕❤️</strong></p>
     <p>Prepare for a day of pure relaxation, cozy socks included.</p>
-    
+ `,    
         // Add additional surprises for other slots as needed
     };
 
