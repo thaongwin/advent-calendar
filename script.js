@@ -107,7 +107,10 @@ A magical treasure hunt awaits!</p>
 <p>Exactly one year ago, we met for the first time. Here’s something special I made just for us.</p>
 <audio id="day17Song" src="assets/sounds/For George and Ivy.mp3" controls autoplay></audio>
 `,
-
+18: `
+    <p><strong> Cozy Socks & Lazy Day 🧦🎄☕❤️</strong></p>
+    <p>Prepare for a day of pure relaxation, cozy socks included.</p>
+    
         // Add additional surprises for other slots as needed
     };
 
