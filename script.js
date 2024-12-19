@@ -110,7 +110,13 @@ A magical treasure hunt awaits!</p>
 18: `
     <p><strong> Cozy Socks & Lazy Day 🧦🎄☕❤️</strong></p>
     <p>Prepare for a day of pure relaxation, cozy socks included.</p>
- `,    
+ `,   
+ 19: `
+    <p><strong>Random Appreciation 💖</strong></p>
+    <p>George, I appreciate how kind and thoughtful you are. This sounds generic and cliche but those are some of your best qualities.</p>
+    <p>Even if we sometimes don't get along that well, I hope this calendar is more than enough to remind you that our love >>> our disagreements.</p>
+`,
+ 
         // Add additional surprises for other slots as needed
     };
 
