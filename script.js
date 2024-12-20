@@ -116,6 +116,10 @@ A magical treasure hunt awaits!</p>
     <p>George, I appreciate how kind and thoughtful you are. This sounds generic and cliche but those are some of your best qualities.</p>
     <p>Even if we sometimes don't get along that well, I hope this calendar is more than enough to remind you that our love >>> our disagreements.</p>
 `,
+ 20: `
+    <p><strong> A No-Complaint Movie Night 🎥🍿😌❤️</strong></p>
+    <p>Tonight, you get to pick a movie for us to watch. Anything you like! </p>
+ `,   
  
         // Add additional surprises for other slots as needed
     };
