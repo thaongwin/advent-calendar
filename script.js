@@ -124,7 +124,11 @@ A magical treasure hunt awaits!</p>
     <p><strong> Coding Challenge! 🎄</strong></p>
     <p>George, today you get to challenge me! Pick a new feature for this advent calendar: a snowflake animation, a favorite song button, or even a mini-game. Anything you'd like to see on this calendar more.</p>
     <p>I'll do it, and no need to go easy on me!</p>
-   `,    
+   `, 
+ 22: `
+    <p><strong> Change in plans 🔄🤔✨ </strong></p>
+    <p> This was originally a NYC-focus day. Instead, let's use this day to actually plan what we will do when we get to NYC 🗽</p>
+ `,   
         // Add additional surprises for other slots as needed
     };
 
