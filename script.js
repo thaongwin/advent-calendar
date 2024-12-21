@@ -120,7 +120,11 @@ A magical treasure hunt awaits!</p>
     <p><strong> A No-Complaint Movie Night 🎥🍿😌❤️</strong></p>
     <p>Tonight, you get to pick a movie for us to watch. Anything you like! </p>
  `,   
- 
+ 21:    ` 
+    <p><strong> Coding Challenge! 🎄</strong></p>
+    <p>George, today you get to challenge me! Pick a new feature for this advent calendar: a snowflake animation, a favorite song button, or even a mini-game. Anything you'd like to see on this calendar more.</p>
+    <p>I'll do it, and no need to go easy on me!</p>
+   `,    
         // Add additional surprises for other slots as needed
     };
 
