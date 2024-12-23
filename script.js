@@ -128,7 +128,13 @@ A magical treasure hunt awaits!</p>
  22: `
     <p><strong> Change in plans 🔄🤔✨ </strong></p>
     <p> This was originally a NYC-focus day. Instead, let's use this day to actually plan what we will do when we get to NYC 🗽</p>
- `,   
+ `,  
+23: `
+    <p><strong> A Letter to Future Us ✍️📬 </strong></p>
+    <p> Today, let’s take a moment to write letters to our future selves—one year from now. What dreams do we hope to achieve? What lessons have we learned this year? What do we want to remind our future selves? Let’s capture our thoughts and seal them as a little time capsule for 2025. 💌✨</p>
+    <p> When you’re ready, we’ll write, share, and safely store them together. ❤️</p>
+`,
+
         // Add additional surprises for other slots as needed
     };
 
