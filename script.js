@@ -134,6 +134,16 @@ A magical treasure hunt awaits!</p>
     <p> Today, let’s take a moment to write letters to our future selves—one year from now. What dreams do we hope to achieve? What lessons have we learned this year? What do we want to remind our future selves? Let’s capture our thoughts and seal them as a little time capsule for 2025. 💌✨</p>
     <p> When you’re ready, we’ll write, share, and safely store them together. ❤️</p>
 `,
+24: `
+  <p><strong> Congratulations 🎉❤️ </strong></p>
+  <p> You've unwrapped 24 days of love, thought, and little surprises. Today marks the finale, but not the end—because my gift to you continues at dinner. ✨</p>
+  <p>
+    <em>Twenty-four days, each filled with delight,  
+    Each one reminding you, my love burns bright.  
+    Tonight at dinner, a toast will say it all—  
+    Merry Christmas, my love, and thank you for it all.</em>
+  </p>
+ `,
 
         // Add additional surprises for other slots as needed
     };
