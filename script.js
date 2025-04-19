@@ -110,13 +110,13 @@ A magical treasure hunt awaits!</p>
 18: `
     <p><strong> Cozy Socks & Lazy Day 🧦🎄☕❤️</strong></p>
     <p>Prepare for a day of pure relaxation, cozy socks included.</p>
- `,   
+ `,  
  19: `
     <p><strong>Random Appreciation 💖</strong></p>
     <p>George, I appreciate how kind and thoughtful you are. This sounds generic and cliche but those are some of your best qualities.</p>
     <p>Even if we sometimes don't get along that well, I hope this calendar is more than enough to remind you that our love >>> our disagreements.</p>
 `,
- 20: `
+20: `
     <p><strong> A No-Complaint Movie Night 🎥🍿😌❤️</strong></p>
     <p>Tonight, you get to pick a movie for us to watch. Anything you like! </p>
  `,   
@@ -145,6 +145,8 @@ A magical treasure hunt awaits!</p>
   </p>
  `,
 
+
+ 
         // Add additional surprises for other slots as needed
     };
 
@@ -388,3 +390,77 @@ document.addEventListener("click", (event) => {
         modal.classList.add("show");
     }
 });
+// Create and place light bulbs around the border
+const lightBorder = document.getElementById('light-border');
+let mode = 0; // 0 = red, 1 = green, 2 = yellow, 3 = red-green-yellow, 4 = off
+
+const totalTopBulbs = 50;
+const totalSideBulbs = 38;
+
+// 🧶 Top Curve (with slight wave and alternating sizes)
+for (let i = 0; i < totalTopBulbs; i++) {
+  const bulb = document.createElement('div');
+  const isBig = i % 2 === 0;
+  bulb.classList.add('bulb', 'red');
+  bulb.style.width = isBig ? '14px' : '8px';
+  bulb.style.height = isBig ? '14px' : '8px';
+
+  const spacing = window.innerWidth / totalTopBulbs;
+  const x = i * spacing;
+  const y = 10 + Math.sin(i * 0.5) * 10; // wave effect
+
+  bulb.style.left = `${x}px`;
+  bulb.style.top = `${y}px`;
+
+  lightBorder.appendChild(bulb);
+}
+
+// 🎋 Side Strings (longer, looser, alternating sizes)
+for (let side of ['left', 'right']) {
+    for (let i = 0; i < totalSideBulbs; i++) {
+      const bulb = document.createElement('div');
+      const isBig = i % 2 === 0;
+      bulb.classList.add('bulb', 'red');
+      bulb.style.width = isBig ? '14px' : '8px';
+      bulb.style.height = isBig ? '14px' : '8px';
+  
+      const spacing = window.innerHeight / totalSideBulbs;
+      const y = i * spacing + 20;
+      const xWiggle = Math.sin(i * 0.4) * 14; // bigger wave!
+  
+      if (side === 'left') {
+        bulb.style.left = `${10 + xWiggle}px`;
+      } else {
+        bulb.style.right = `${10 + xWiggle}px`;
+        bulb.style.left = '';
+      }
+  
+      bulb.style.top = `${y}px`;
+      lightBorder.appendChild(bulb);
+    }
+  }
+  
+  
+
+// 🎛 Mode Toggle
+document.getElementById('light-switch').addEventListener('click', () => {
+    mode = (mode + 1) % 5;
+    const bulbs = document.querySelectorAll('.bulb');
+  
+    bulbs.forEach((bulb, index) => {
+      bulb.classList.remove('red', 'green', 'yellow', 'off');
+  
+      if (mode === 0) {
+        bulb.classList.add('red');
+      } else if (mode === 1) {
+        bulb.classList.add('green');
+      } else if (mode === 2) {
+        bulb.classList.add('yellow');
+      } else if (mode === 3) {
+        const colors = ['red', 'green', 'yellow'];
+        bulb.classList.add(colors[index % 3]);
+      } else if (mode === 4) {
+        bulb.classList.add('off');
+      }
+    });
+  });
